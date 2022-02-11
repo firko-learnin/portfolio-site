@@ -1,6 +1,6 @@
 # About
 
-A site to display my developer portfolio built in React using NextJS and Typescript.
+A site to display my developer portfolio built in React using NextJS, Chakra UI and Typescript.
 
 # Colour scheme:
 
