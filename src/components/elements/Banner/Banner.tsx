@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./Banner.module.css";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 export default function Banner() {
   return (
@@ -11,6 +12,9 @@ export default function Banner() {
         </h1>
         <h2 className={styles.h2}>Full Stack Engineer</h2>
       </div>
+      <Link href={"/about"}>
+        <ArrowRightIcon id={styles.downArrow} />
+      </Link>
     </div>
   );
 }
