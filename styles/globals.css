@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +13,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --yellow: hsla(52, 100%, 49%, 1);
+  --onyx: hsla(224, 10%, 21%, 1);
+  --green: hsla(138, 25%, 39%, 1);
+  --blue: hsla(198, 37%, 46%, 1);
 }

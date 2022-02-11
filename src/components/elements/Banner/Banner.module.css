@@ -1,0 +1,91 @@
+.banner {
+  margin: 0;
+  padding: 0;
+  background: url("../../../images/background.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  color: var(--white);
+  display: block;
+  text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-bottom: auto;
+  width: 100%;
+  justify-content: center;
+  font-size: 10vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid var(--light-cyan); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-top: 30vh;
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(100, end), blink-caret 3.5s step-end;
+  width: 75%;
+}
+
+.h2 {
+  color: var(--yellow);
+  font-size: 3vw;
+  margin: 0;
+  animation: fade-in 3.5s;
+}
+
+#splash a {
+  text-decoration: none;
+  color: var(--cultured);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--rosewood);
+  text-shadow: var(--black) 2px 2px;
+  filter: blur(0.1px);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--light-cyan);
+  }
+}
+
+@keyframes fade-in {
+  from,
+  to {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.downArrow {
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+  align-items: flex-end;
+  text-align: center;
+  color: var(--cultured-2);
+}
