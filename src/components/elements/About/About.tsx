@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
 import headshot from "../../../images/headshot.jpg";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
         dicta, facilis accusantium? Atque repellendus mollitia rem nihil
         perferendis, eligendi eaque.
       </p>
+      <ArrowRightIcon id={styles.downArrow} />
     </section>
   );
 }
