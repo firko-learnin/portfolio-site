@@ -1,6 +1,5 @@
 .about {
   height: 100vh;
-  background-color: var(--onyx);
 }
 .imageContainer {
   float: right;
@@ -21,6 +20,5 @@
 }
 
 .text {
-  color: var(--white);
-  margin-left: 5vw;
+  margin-left: 6vw;
 }

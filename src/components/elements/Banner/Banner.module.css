@@ -7,6 +7,11 @@
 
 .background {
   z-index: -999;
+  filter: grayscale(100%);
+}
+
+.backgroundLight {
+  z-index: -999;
 }
 
 .banner {
@@ -19,9 +24,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  /* background: url("../../../images/background.jpg");
-  background-size: 100% 100vh;
-  background-repeat: no-repeat; */
   height: 100vh;
   overflow: hidden;
 }

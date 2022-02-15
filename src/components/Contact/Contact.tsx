@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import Image from "next/image";
 export default function Contact() {
   return (
     <section id="about" className={styles.about}>

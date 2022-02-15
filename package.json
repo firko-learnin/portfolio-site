@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "description": "Jack's personal website",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -7,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "Jack Firkin",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.5",
     "@chakra-ui/react": "^1.8.3",

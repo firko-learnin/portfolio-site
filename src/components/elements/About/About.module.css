@@ -1,7 +1,6 @@
 .about {
   position: relative;
   height: 100vh;
-  background-color: var(--onyx);
 }
 .imageContainer {
   float: right;
@@ -22,7 +21,6 @@
 }
 
 .text {
-  color: var(--white);
   margin-left: 5vw;
 }
 
@@ -31,7 +29,6 @@
   left: 50vw;
   text-align: center;
   bottom: 2vh;
-  color: var(--white);
   font-size: 4vh;
   animation: bounce 2s infinite;
 }
