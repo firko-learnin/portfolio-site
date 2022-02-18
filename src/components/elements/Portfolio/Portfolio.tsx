@@ -1,20 +1,11 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
-import Image from "next/image";
-import headshot from "../../../images/headshot.jpg";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 
 export default function Portfolio() {
   return (
     <section id="portfolio" className={styles.portfolio}>
       <h1 className={styles.h1}>Portfolio:</h1>
-      <div className={styles.imageContainer}>
-        <Image
-          src={headshot}
-          alt="Image of Jack Firkin"
-          layout="responsive"
-        ></Image>
-      </div>
       <p className={styles.text}>
         expedita voluptas nobis sit fugiat minus autem exercitationem commodi
         doloremque perferendis molestiae? Quasi ipsam voluptatum maiores animi,
