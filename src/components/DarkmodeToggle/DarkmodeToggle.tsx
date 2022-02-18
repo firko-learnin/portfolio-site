@@ -21,7 +21,6 @@ export default function DarkmodeToggle() {
         }
         onClick={function () {
           toggleColorMode();
-          // setColourMode(colorMode);
         }}
         color={colors}
       ></IconButton>

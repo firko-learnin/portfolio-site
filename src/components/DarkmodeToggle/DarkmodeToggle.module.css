@@ -7,6 +7,9 @@
 #button:focus {
   box-shadow: 0 0 1px 2px var(--yellow), 0 1px 1px rgba(0, 0, 0, 0.15);
 }
+#button:hover {
+  transform: scale(1.1);
+}
 #navbar {
   overflow: hidden;
   position: sticky;

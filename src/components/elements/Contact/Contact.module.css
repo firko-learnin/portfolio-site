@@ -1,0 +1,27 @@
+.contact {
+  height: 100vh;
+  width: auto;
+}
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+}
+.socialsContainer a {
+  align-self: center;
+  padding: 4vw;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialsContainer a:hover {
+  transform: scale(1.1);
+}
+
+.h1 {
+  color: var(--yellow);
+  margin-left: 5vw;
+  font-size: 4rem;
+  padding-top: 10vh;
+}
