@@ -50,7 +50,7 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
-  animation: typing 2.5s steps(100, end), blink-caret 2.5s step-end;
+  animation: typing 3.5s steps(100, end), blink-caret 3.5s step-end;
   width: 75%;
 }
 
@@ -59,7 +59,7 @@
   color: var(--yellow);
   font-size: 3vw;
   margin-left: 5vw;
-  animation: fade-in 3s;
+  animation: fade-in 4s;
 }
 
 #splash a {
@@ -77,6 +77,12 @@
     width: 0;
   }
   to {
+    width: 0;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
     width: 75%;
   }
 }
