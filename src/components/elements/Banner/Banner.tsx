@@ -12,6 +12,7 @@ export default function Banner() {
       <div className={styles.top}>
         {colorMode === "dark" ? (
           <Image
+            priority={true}
             className={styles.background}
             src={backgroundLight}
             alt="A cityscape photo - London"

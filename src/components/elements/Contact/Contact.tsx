@@ -9,7 +9,7 @@ export default function Contact() {
   const { colorMode } = useColorMode();
   return (
     <section id="about" className={styles.contact}>
-      <h1 className={styles.h1}>Contact:</h1>
+      <h1 className={styles.h1}>Links:</h1>
       <div className={styles.socialsContainer}>
         <SocialIcon
           fgColor={theme.colors.brand.white}
