@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 
 export default function About() {
   return (
-    <section id="about">
+    <section className={styles.about} id="about">
       <div className={styles.titleImage}>
         <div className={styles.textArea}>
           <div className={styles.textContainer}>

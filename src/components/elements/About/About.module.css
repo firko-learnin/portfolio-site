@@ -48,6 +48,8 @@
 }
 
 #downArrow {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 2rem;
   left: 50%;
