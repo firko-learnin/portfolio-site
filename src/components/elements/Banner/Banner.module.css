@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.background {
+.backgroundDark {
   z-index: -999;
   filter: grayscale(100%);
 }

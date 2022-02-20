@@ -10,26 +10,19 @@ export default function Banner() {
   return (
     <>
       <div className={styles.top}>
-        {colorMode === "dark" ? (
-          <Image
-            loading={"eager"}
-            className={styles.background}
-            src={backgroundLight}
-            alt="A cityscape photo - London"
-            objectFit="fill"
-            objectPosition="center"
-            layout="fill"
-          ></Image>
-        ) : (
-          <Image
-            className={styles.backgroundLight}
-            src={backgroundLight}
-            alt="A cityscape photo - London"
-            objectFit="fill"
-            objectPosition="center"
-            layout="fill"
-          ></Image>
-        )}
+        <Image
+          loading={"eager"}
+          className={`${
+            colorMode === "light"
+              ? styles.backgroundLight
+              : styles.backgroundDark
+          }`}
+          src={backgroundLight}
+          alt="A cityscape photo - London"
+          objectFit="fill"
+          objectPosition="center"
+          layout="fill"
+        ></Image>
         <div className={styles.banner}>
           <div className={styles.titles}>
             <h1 className={styles.h1}>Jack Firkin</h1>
