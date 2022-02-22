@@ -6,7 +6,7 @@ import DarkmodeToggle from "../src/components/DarkmodeToggle/DarkmodeToggle";
 //Sections
 import Banner from "../src/components/elements/Banner/Banner";
 import About from "../src/components/elements/About/About";
-import Contact from "../src/components/elements/Contact/Contact";
+import Links from "../src/components/elements/Links/Links";
 import Portfolio from "../src/components/elements/Portfolio/Portfolio";
 const Home: NextPage = () => {
   const [colourMode, setColourMode] = useState(theme.config.initialColorMode);
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <Banner></Banner>
         <About></About>
         <Portfolio></Portfolio>
-        <Contact></Contact>
+        <Links></Links>
       </ReactPageScroller>
     </main>
   );

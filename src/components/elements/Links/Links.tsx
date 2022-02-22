@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./Contact.module.css";
-import { SocialIcon } from "react-social-icons";
-import { useColorMode, IconButton } from "@chakra-ui/react";
-import { useTheme } from "@chakra-ui/react";
+import React from 'react';
+import styles from './Links.module.css';
+import { SocialIcon } from 'react-social-icons';
+import { useColorMode, IconButton } from '@chakra-ui/react';
+import { useTheme } from '@chakra-ui/react';
 
-export default function Contact() {
+export default function Links() {
   const theme = useTheme();
   const { colorMode } = useColorMode();
   return (
-    <section id="about" className={styles.contact}>
+    <section id="links" className={styles.contact}>
       <h1 className={styles.h1}>Links:</h1>
       <div className={styles.socialsContainer}>
         <SocialIcon

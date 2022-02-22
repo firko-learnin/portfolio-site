@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 a {
@@ -20,4 +21,39 @@ a {
   --onyx: hsla(224, 10%, 21%, 1);
   --green: hsla(138, 25%, 39%, 1);
   --blue: hsla(198, 37%, 46%, 1);
+}
+
+.downArrow {
+  height: 10vh;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  animation: bounce 2s infinite;
+  margin: auto;
+}
+
+.arrowWrapper {
+  height: 3rem;
+  display: flex;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
