@@ -1,16 +1,16 @@
-.button {
+#button {
   position: fixed;
   top: 1vh;
   right: 1vw;
   outline: none;
 }
-.button:focus {
+#button:focus {
   box-shadow: 0 0 1px 2px var(--yellow), 0 1px 1px rgba(0, 0, 0, 0.15);
 }
-.button:hover {
+#button:hover {
   transform: scale(1.1);
 }
-.navbar {
+#navbar {
   overflow: hidden;
   position: sticky;
   top: 0;

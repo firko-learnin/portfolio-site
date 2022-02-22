@@ -33,7 +33,7 @@ export default function About() {
         </div>
       </div>
       <div className="arrowWrapper">
-        <KeyboardDoubleArrowDownIcon className="downArrow" />
+        <KeyboardDoubleArrowDownIcon id="downArrow" />
       </div>
     </section>
   );

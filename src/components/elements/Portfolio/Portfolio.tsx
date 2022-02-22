@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Portfolio.module.css";
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import React from 'react';
+import styles from './Portfolio.module.css';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 export default function Portfolio() {
   return (
@@ -17,7 +17,7 @@ export default function Portfolio() {
         </p>
       </section>
       <div className="arrowWrapper">
-        <KeyboardDoubleArrowDownIcon className="downArrow" />
+        <KeyboardDoubleArrowDownIcon id="downArrow" />
       </div>
     </>
   );

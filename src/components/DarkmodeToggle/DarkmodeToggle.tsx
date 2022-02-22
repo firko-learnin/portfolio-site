@@ -11,10 +11,10 @@ export default function DarkmodeToggle() {
     dark: 'black'
   };
   return (
-    <div className={styles.navbar}>
+    <div id={styles.navbar}>
       <IconButton
         ref={tableRef}
-        className={styles.button}
+        id={styles.button}
         aria-label="Toggle dark mode"
         icon={
           colorMode === 'dark' ? <SunIcon></SunIcon> : <MoonIcon></MoonIcon>

@@ -33,7 +33,7 @@ export default function Banner() {
             className="arrowWrapper"
             style={{ position: 'absolute', bottom: '3rem' }}
           >
-            <KeyboardDoubleArrowDownIcon className="downArrow" />
+            <KeyboardDoubleArrowDownIcon id="downArrow" />
           </div>
         </div>
       </div>

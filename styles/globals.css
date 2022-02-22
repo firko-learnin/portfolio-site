@@ -23,7 +23,7 @@ a {
   --blue: hsla(198, 37%, 46%, 1);
 }
 
-.downArrow {
+#downArrow {
   height: 10vh;
   font-size: 4rem;
   margin-bottom: 3rem;
