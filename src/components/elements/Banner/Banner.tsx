@@ -10,31 +10,25 @@ export default function Banner() {
 
   return (
     <>
-      <div className={styles.top}>
-        <Image
-          loading={'eager'}
-          className={`${
-            colorMode === 'light'
-              ? styles.backgroundLight
-              : styles.backgroundDark
-          }`}
-          src={backgroundLight}
-          alt="A cityscape photo - London"
-          objectFit="fill"
-          objectPosition="center"
-          layout="fill"
-        ></Image>
-        <div className={styles.banner}>
-          <div className={styles.titles}>
-            <h1 className={styles.h1}>Jack Firkin</h1>
-          </div>
-          <h2 className={styles.h2}>Full Stack Engineer</h2>
-          <div
-            className="arrowWrapper"
-            style={{ position: 'absolute', bottom: '3rem' }}
-          >
-            <KeyboardDoubleArrowDownIcon id="downArrow" />
-          </div>
+      <div
+        className={styles.background}
+        style={{
+          filter: colorMode === 'light' ? 'grayscale(0%)' : 'grayscale(100%)'
+        }}
+      ></div>
+      <div className={styles.banner}>
+        <div className={styles.titles}>
+          <h1 className={styles.h1}>Jack Firkin</h1>
+        </div>
+        <h2 className={styles.h2}>Full Stack Engineer</h2>
+        <div
+          className="arrowWrapper"
+          style={{ position: 'absolute', bottom: '3rem' }}
+        >
+          <KeyboardDoubleArrowDownIcon
+            id="downArrow"
+            style={{ color: 'white' }}
+          />
         </div>
       </div>
     </>

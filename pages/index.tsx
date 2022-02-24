@@ -1,20 +1,20 @@
-import type { NextPage } from "next";
-import ReactPageScroller from "react-page-scroller";
-import { theme } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import DarkmodeToggle from "../src/components/DarkmodeToggle/DarkmodeToggle";
+import type { NextPage } from 'next';
+import ReactPageScroller from 'react-page-scroller';
+import { theme } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import DarkmodeToggle from '../src/components/DarkmodeToggle/DarkmodeToggle';
 //Sections
-import Banner from "../src/components/elements/Banner/Banner";
-import About from "../src/components/elements/About/About";
-import Links from "../src/components/elements/Links/Links";
-import Portfolio from "../src/components/elements/Portfolio/Portfolio";
+import Banner from '../src/components/elements/Banner/Banner';
+import About from '../src/components/elements/About/About';
+import Links from '../src/components/elements/Links/Links';
+import Portfolio from '../src/components/elements/Portfolio/Portfolio';
 const Home: NextPage = () => {
   const [colourMode, setColourMode] = useState(theme.config.initialColorMode);
-
+  const [blockScroll, setBlockScroll] = useState(false);
   return (
-    <main>
+    <main id="main">
       <DarkmodeToggle></DarkmodeToggle>
-      <ReactPageScroller animationTimer={800} animationTimerBuffer={100}>
+      <ReactPageScroller>
         <Banner></Banner>
         <About></About>
         <Portfolio></Portfolio>
