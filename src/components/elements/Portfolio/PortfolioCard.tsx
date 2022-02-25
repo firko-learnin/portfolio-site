@@ -52,11 +52,16 @@ export default function PortfolioCard() {
             coffee recipes. I created this app as a Christmas projects after 6
             weeks at School of Code using Vanilla HTML, CSS and JS for the front
             end and an Express back end. The app is deployed on Heroku using a
-            PostgreSQL database to store recipes.
+            PostgreSQL database to store recipes. {'\n'}
+            <br />
+            <br />
+            {'\n'}I am currently in the process of rewriting this app using
+            NextJS and TypeScript.
           </p>
         </Box>
         <Box display="flex" mt="2" alignItems="center">
           <SocialIcon
+            style={{ height: 40, width: 40 }}
             className={styles.link}
             url="https://github.com/firko-learnin/CGD"
             target="_blank"

@@ -9,8 +9,13 @@
 }
 
 .projectDescription {
-  text-align: 'justify';
   margin-top: '.5rem';
+  text-align: justify;
+}
+
+.link {
+  display: flex;
+  align-items: flex-end;
 }
 
 .link:hover {
