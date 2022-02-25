@@ -52,10 +52,9 @@ export default function PortfolioCard() {
             coffee recipes. I created this app as a Christmas projects after 6
             weeks at School of Code using Vanilla HTML, CSS and JS for the front
             end and an Express back end. The app is deployed on Heroku using a
-            PostgreSQL database to store recipes. {'\n'}
+            PostgreSQL database to store recipes.
             <br />
-            <br />
-            {'\n'}I am currently in the process of rewriting this app using
+            <br />I am currently in the process of rewriting this app using
             NextJS and TypeScript.
           </p>
         </Box>
