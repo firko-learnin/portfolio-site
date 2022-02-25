@@ -23,7 +23,13 @@ export default function PortfolioCard() {
   };
 
   return (
-    <Box maxW="lg" borderWidth="1px" borderRadius="lg" overflow="hidden">
+    <Box
+      className={styles.projectImage}
+      maxW="lg"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+    >
       <a
         target="_blank"
         href="https://coffeegrinddatabase.herokuapp.com/"
