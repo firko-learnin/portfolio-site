@@ -14,18 +14,22 @@ export default function Links() {
         <SocialIcon
           fgColor={theme.colors.brand.white}
           url="https://www.linkedin.com/in/jack-firkin-5980819a/"
+          target="_blank"
         ></SocialIcon>
         <SocialIcon
           fgColor={theme.colors.brand.white}
           url="https://github.com/firko-learnin"
+          target="_blank"
         ></SocialIcon>
         <SocialIcon
           fgColor={theme.colors.brand.white}
           url="https://www.instagram.com/jackfirkin/?hl=en-gb"
+          target="_blank"
         ></SocialIcon>
         <SocialIcon
           fgColor={theme.colors.brand.white}
           url="https://twitter.com/firkoLearnin"
+          target="_blank"
         ></SocialIcon>
       </div>
     </section>
