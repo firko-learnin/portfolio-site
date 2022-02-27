@@ -12,7 +12,6 @@
 }
 
 .projectText {
-  margin-top: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: justify;
@@ -20,7 +19,9 @@
 }
 
 .projectDescription {
-  overflow-y: scroll;
+  overflow-y: hidden;
+  margin-left: 1rem;
+  margin-right: 1rem;
   height: auto;
 }
 
@@ -57,7 +58,11 @@
   text-justify: inter-word;
 }
 
-@media (max-width: 912px) {
+.modalButton {
+  display: none;
+}
+
+@media (max-width: 850px) {
   .text {
     text-align: center;
   }
@@ -71,7 +76,10 @@
     height: 70vh;
   }
   .projectDescription {
-    overflow-y: scroll;
-    height: 25vh;
+    overflow-y: hidden;
+    height: 50vw;
+  }
+  .modalButton {
+    display: block;
   }
 }

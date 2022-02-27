@@ -1,0 +1,79 @@
+:root {
+  --white: hsla(0, 0%, 100%, 1);
+  --yellow: hsla(52, 100%, 49%, 1);
+  --onyx: hsla(224, 10%, 21%, 1);
+  --green: hsla(138, 25%, 39%, 1);
+  --blue: hsla(198, 37%, 46%, 1);
+}
+
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-dark
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  ul.control-dots
+  li.dot.selected,
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-dark
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  ul.control-dots
+  li.dot,
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-light
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  ul.control-dots
+  li.dot.selected,
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-light
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  ul.control-dots
+  li.dot {
+  box-shadow: var(--yellow);
+  background-color: var(--yellow);
+}
+
+html.rps-scroll--disabled
+  body.chakra-ui-light.rps-scroll--disabled
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  p.carousel-status {
+  color: initial;
+  text-shadow: none;
+}

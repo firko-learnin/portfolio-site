@@ -1,9 +1,19 @@
-import { Box, Badge } from '@chakra-ui/react';
+import { Box, Badge, useDisclosure, Button } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { StarIcon } from '@chakra-ui/icons';
 import cgd from '../../../../public/coffeeGrindDatabase.png';
-import { useTheme, useColorMode } from '@chakra-ui/react';
+import {
+  useTheme,
+  useColorMode,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton
+} from '@chakra-ui/react';
 import { SocialIcon } from 'react-social-icons';
 import styles from './Portfolio.module.css';
 import { Dispatch, SetStateAction } from 'react';
@@ -12,9 +22,49 @@ type Props = {
   project: {
     imageAlt: string;
     title: string;
+    description: string;
+    githubUrl: string;
+    deployUrl: string;
   };
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
 };
+
+type Description = {
+  description: string;
+  title: string;
+};
+
+function ModalText({ description, title }: Description) {
+  const theme = useTheme();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <>
+      <Button className={styles.modalButton} onClick={onOpen}>
+        Read more...
+      </Button>
+
+      <Modal isOpen={isOpen} onClose={onClose} isCentered colorScheme="brand">
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody textAlign="center">{description}</ModalBody>
+
+          <ModalFooter>
+            <Button
+              bgColor={theme.colors.brand.yellow}
+              color={theme.colors.brand.onyx}
+              mr={3}
+              onClick={onClose}
+            >
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+}
 
 export default function PortfolioCard({ project, setBlockScroll }: Props) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,11 +82,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       borderRadius="lg"
       overflow="hidden"
     >
-      <a
-        target="_blank"
-        href="https://coffeegrinddatabase.herokuapp.com/"
-        rel="noreferrer"
-      >
+      <a target="_blank" href={project.deployUrl} rel="noreferrer">
         <Image src={cgd} alt={project.imageAlt} height="400px" />
       </a>
       <Box className={styles.projectText}>
@@ -51,28 +97,31 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
           {project.title}
         </Box>
         <p
-          className={styles.proejectDescription}
-          onPointerEnter={() => handleBlockScroll(true)}
-          onPointerLeave={() => handleBlockScroll(false)}
+          className={styles.projectDescription}
+          // onPointerEnter={() => handleBlockScroll(true)}
+          // onPointerLeave={() => handleBlockScroll(false)}
         >
-          A full stack app for coffee enthusiasts to share espresso/filter
-          coffee recipes. I created this app as a Christmas projects after 6
-          weeks at School of Code using Vanilla HTML, CSS and JS for the front
-          end and an Express back end. The app is deployed on Heroku using a
-          PostgreSQL database to store recipes.
-          <br />
-          <br />I am currently in the process of rewriting this app using NextJS
-          and TypeScript.
+          {project.description}
         </p>
-      </Box>
-      <Box display="flex" mt="2" alignItems="center">
-        <SocialIcon
-          style={{ height: 40, width: 40 }}
-          className={styles.link}
-          url="https://github.com/firko-learnin/CGD"
-          target="_blank"
-          fgColor={theme.colors.brand.white}
-        ></SocialIcon>
+        <Box
+          display="flex"
+          mt="2"
+          mb="10"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <ModalText
+            description={project.description}
+            title={project.title}
+          ></ModalText>
+          <SocialIcon
+            style={{ height: 40, width: 40 }}
+            className={styles.link}
+            url={project.githubUrl}
+            target="_blank"
+            fgColor={theme.colors.brand.white}
+          ></SocialIcon>
+        </Box>
       </Box>
     </Box>
   );

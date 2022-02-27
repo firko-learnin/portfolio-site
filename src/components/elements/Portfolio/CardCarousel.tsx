@@ -8,6 +8,9 @@ type Props = {
   projects: {
     imageAlt: string;
     title: string;
+    description: string;
+    githubUrl: string;
+    deployUrl: string;
   }[];
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
 };
