@@ -25,6 +25,7 @@ type Props = {
     description: string;
     githubUrl: string;
     deployUrl: string;
+    image: StaticImageData;
   };
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
 };
@@ -83,7 +84,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       overflow="hidden"
     >
       <a target="_blank" href={project.deployUrl} rel="noreferrer">
-        <Image src={cgd} alt={project.imageAlt} height="400px" />
+        <Image src={project.image} alt={project.imageAlt} height="400px" />
       </a>
       <Box className={styles.projectText}>
         <Box

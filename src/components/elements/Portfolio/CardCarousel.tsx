@@ -11,6 +11,7 @@ type Props = {
     description: string;
     githubUrl: string;
     deployUrl: string;
+    image: StaticImageData;
   }[];
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
 };

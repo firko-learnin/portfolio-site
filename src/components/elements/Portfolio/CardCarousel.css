@@ -77,3 +77,14 @@ html.rps-scroll--disabled
   color: initial;
   text-shadow: none;
 }
+
+.carousel .control-next.control-arrow::before {
+  border-left: 8px solid var(--yellow) !important;
+}
+.carousel .control-prev.control-arrow::before {
+  border-right: 8px solid var(--yellow) !important;
+}
+
+.carousel {
+  height: 100% !important;
+}
