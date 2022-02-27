@@ -40,9 +40,11 @@ function ModalText({ description, title }: Description) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button className={styles.modalButton} onClick={onOpen}>
-        Read more...
-      </Button>
+      {description.length > 175 ? (
+        <Button className={styles.modalButton} onClick={onOpen}>
+          Read more...
+        </Button>
+      ) : null}
 
       <Modal isOpen={isOpen} onClose={onClose} isCentered colorScheme="brand">
         <ModalOverlay />
@@ -84,7 +86,12 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       overflow="hidden"
     >
       <a target="_blank" href={project.deployUrl} rel="noreferrer">
-        <Image src={project.image} alt={project.imageAlt} height="400px" />
+        <Image
+          src={project.image}
+          alt={project.imageAlt}
+          height="400px"
+          width="600px"
+        />
       </a>
       <Box className={styles.projectText}>
         <Box
@@ -99,8 +106,8 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
         </Box>
         <p
           className={styles.projectDescription}
-          // onPointerEnter={() => handleBlockScroll(true)}
-          // onPointerLeave={() => handleBlockScroll(false)}
+          onPointerEnter={() => handleBlockScroll(true)}
+          onPointerLeave={() => handleBlockScroll(false)}
         >
           {project.description}
         </p>
