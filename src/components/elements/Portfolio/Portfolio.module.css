@@ -11,14 +11,21 @@
   overflow: hidden;
 }
 
-.projectDescription {
+.projectText {
   margin-top: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: justify;
+  height: fit-content;
+}
+
+.projectDescription {
+  overflow-y: scroll;
+  height: auto;
 }
 
 .projectCard {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }

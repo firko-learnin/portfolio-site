@@ -37,12 +37,11 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
         href="https://coffeegrinddatabase.herokuapp.com/"
         rel="noreferrer"
       >
-        <Image src={cgd} alt={project.imageAlt} />
+        <Image src={cgd} alt={project.imageAlt} height="400px" />
       </a>
-      <Box p="6">
-        <Box display="flex" alignItems="baseline"></Box>
-
+      <Box className={styles.projectText}>
         <Box
+          p="3"
           mt="1"
           fontWeight="semibold"
           as="h4"
@@ -51,30 +50,29 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
         >
           {project.title}
         </Box>
-        <Box className={styles.projectDescription}>
-          <p
-            onPointerEnter={() => handleBlockScroll(true)}
-            onPointerLeave={() => handleBlockScroll(false)}
-          >
-            A full stack app for coffee enthusiasts to share espresso/filter
-            coffee recipes. I created this app as a Christmas projects after 6
-            weeks at School of Code using Vanilla HTML, CSS and JS for the front
-            end and an Express back end. The app is deployed on Heroku using a
-            PostgreSQL database to store recipes.
-            <br />
-            <br />I am currently in the process of rewriting this app using
-            NextJS and TypeScript.
-          </p>
-        </Box>
-        <Box display="flex" mt="2" alignItems="center">
-          <SocialIcon
-            style={{ height: 40, width: 40 }}
-            className={styles.link}
-            url="https://github.com/firko-learnin/CGD"
-            target="_blank"
-            fgColor={theme.colors.brand.white}
-          ></SocialIcon>
-        </Box>
+        <p
+          className={styles.proejectDescription}
+          onPointerEnter={() => handleBlockScroll(true)}
+          onPointerLeave={() => handleBlockScroll(false)}
+        >
+          A full stack app for coffee enthusiasts to share espresso/filter
+          coffee recipes. I created this app as a Christmas projects after 6
+          weeks at School of Code using Vanilla HTML, CSS and JS for the front
+          end and an Express back end. The app is deployed on Heroku using a
+          PostgreSQL database to store recipes.
+          <br />
+          <br />I am currently in the process of rewriting this app using NextJS
+          and TypeScript.
+        </p>
+      </Box>
+      <Box display="flex" mt="2" alignItems="center">
+        <SocialIcon
+          style={{ height: 40, width: 40 }}
+          className={styles.link}
+          url="https://github.com/firko-learnin/CGD"
+          target="_blank"
+          fgColor={theme.colors.brand.white}
+        ></SocialIcon>
       </Box>
     </Box>
   );
