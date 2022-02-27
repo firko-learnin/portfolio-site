@@ -14,10 +14,13 @@ const Home: NextPage = () => {
   return (
     <main id="main">
       <DarkmodeToggle></DarkmodeToggle>
-      <ReactPageScroller>
+      <ReactPageScroller
+        blockScrollUp={blockScroll}
+        blockScrollDown={blockScroll}
+      >
         <Banner></Banner>
         <About></About>
-        <Portfolio></Portfolio>
+        <Portfolio setBlockScroll={setBlockScroll}></Portfolio>
         <Links></Links>
       </ReactPageScroller>
     </main>

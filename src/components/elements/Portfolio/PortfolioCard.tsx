@@ -6,26 +6,28 @@ import cgd from '../../../../public/coffeeGrindDatabase.png';
 import { useTheme, useColorMode } from '@chakra-ui/react';
 import { SocialIcon } from 'react-social-icons';
 import styles from './Portfolio.module.css';
+import { Dispatch, SetStateAction } from 'react';
 
-// Sample card from Airbnb
+type Props = {
+  project: {
+    imageAlt: string;
+    title: string;
+  };
+  setBlockScroll: Dispatch<SetStateAction<boolean>>;
+};
 
-export default function PortfolioCard() {
+export default function PortfolioCard({ project, setBlockScroll }: Props) {
   const { colorMode, toggleColorMode } = useColorMode();
   const theme = useTheme();
-  console.log(theme.config);
-  const property = {
-    imageAlt: 'Rear view of modern home with pool',
-    beds: 3,
-    baths: 2,
-    title: 'Coffee grind database',
-    reviewCount: 34,
-    rating: 4
-  };
+
+  function handleBlockScroll(boolean: boolean) {
+    console.log('blocking');
+    setBlockScroll(boolean);
+  }
 
   return (
     <Box
-      className={styles.projectImage}
-      maxW="lg"
+      className={styles.projectCard}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
@@ -35,7 +37,7 @@ export default function PortfolioCard() {
         href="https://coffeegrinddatabase.herokuapp.com/"
         rel="noreferrer"
       >
-        <Image src={cgd} alt={property.imageAlt} />
+        <Image src={cgd} alt={project.imageAlt} />
       </a>
       <Box p="6">
         <Box display="flex" alignItems="baseline"></Box>
@@ -47,12 +49,12 @@ export default function PortfolioCard() {
           lineHeight="tight"
           isTruncated
         >
-          {property.title}
+          {project.title}
         </Box>
-        <Box>
+        <Box className={styles.projectDescription}>
           <p
-            className={styles.projectDescription}
-            style={{ textAlign: 'justify', marginTop: '.5rem' }}
+            onPointerEnter={() => handleBlockScroll(true)}
+            onPointerLeave={() => handleBlockScroll(false)}
           >
             A full stack app for coffee enthusiasts to share espresso/filter
             coffee recipes. I created this app as a Christmas projects after 6

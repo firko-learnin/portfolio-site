@@ -4,21 +4,23 @@
 }
 
 .projectsSection {
-  width: 80%;
-  margin: auto;
+  width: 95vw;
+  height: 70vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow: hidden;
 }
 
 .projectDescription {
-  margin-top: '.5rem';
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: justify;
 }
 
-.projectImage {
-  transition: all 0.4s ease-in-out;
-}
-
-.projectImage:hover {
-  transform: scale(1.05);
+.projectCard {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link {
@@ -31,6 +33,7 @@
 }
 
 .h1 {
+  grid-area: 'About';
   color: var(--yellow);
   margin-left: 5vw;
   font-size: 5vw;
@@ -56,5 +59,12 @@
   }
   .h2 {
     font-size: 32px;
+  }
+  .projectCard {
+    height: 70vh;
+  }
+  .projectDescription {
+    overflow-y: scroll;
+    height: 25vh;
   }
 }
