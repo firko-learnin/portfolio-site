@@ -27,10 +27,10 @@ export default function About() {
             layout="responsive"
           ></Image>
         </div>
-        <div className={styles.experience}>
+        {/* <div className={styles.experience}>
           {' '}
           <h2 className={styles.h2}>Experience:</h2>
-        </div>
+        </div> */}
       </div>
       <div className="arrowWrapper">
         <KeyboardDoubleArrowDownIcon id="downArrow" />
