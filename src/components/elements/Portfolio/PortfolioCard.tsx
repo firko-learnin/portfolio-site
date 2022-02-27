@@ -1,8 +1,5 @@
-import { Box, Badge, useDisclosure, Button } from '@chakra-ui/react';
+import { Box, useDisclosure, Button } from '@chakra-ui/react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { StarIcon } from '@chakra-ui/icons';
-import cgd from '../../../../public/coffeeGrindDatabase.png';
 import {
   useTheme,
   useColorMode,
@@ -70,7 +67,6 @@ function ModalText({ description, title }: Description) {
 }
 
 export default function PortfolioCard({ project, setBlockScroll }: Props) {
-  const { colorMode, toggleColorMode } = useColorMode();
   const theme = useTheme();
 
   function handleBlockScroll(boolean: boolean) {
@@ -84,6 +80,8 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
+      onPointerEnter={() => handleBlockScroll(true)}
+      onPointerLeave={() => handleBlockScroll(false)}
     >
       <a target="_blank" href={project.deployUrl} rel="noreferrer">
         <Image
@@ -104,13 +102,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
         >
           {project.title}
         </Box>
-        <p
-          className={styles.projectDescription}
-          onPointerEnter={() => handleBlockScroll(true)}
-          onPointerLeave={() => handleBlockScroll(false)}
-        >
-          {project.description}
-        </p>
+        <p className={styles.projectDescription}>{project.description}</p>
         <Box
           display="flex"
           mt="2"
