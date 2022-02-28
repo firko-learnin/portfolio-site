@@ -87,7 +87,7 @@
     height: 20vh;
   }
   .modalButton {
-    display: block;
+    display: block !important;
     margin-right: 1rem;
   }
   .projectText {
