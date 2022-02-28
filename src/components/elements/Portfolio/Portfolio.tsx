@@ -16,7 +16,7 @@ const projects = [
     imageAlt: 'A screenshot of my coffee grind database app',
     title: 'Coffee grind database',
     description:
-      'A full stack app for coffee enthusiasts to share espresso/filter coffee recipes. I created this app as a Christmas project after 6 weeks at School of Code using HTML, CSS and vanilla JS for the front end and an Express back end. The app is deployed on Heroku using a PostgreSQL database to store recipes. I am currently in the process of rewriting this app using NextJS and TypeScript.',
+      'A full stack app for coffee enthusiasts to share espresso/filter coffee recipes. I created this app as a Christmas project after 6 weeks at School of Code using HTML, CSS and vanilla JS for the front end and an Express back end. The app is deployed on Heroku using a PostgreSQL database to store recipes. I am currently in the process of rewriting this app using NextJS and TypeScript (see React-rewrite branch).',
     githubUrl: 'https://github.com/firko-learnin/CGD',
     deployUrl: 'https://coffeegrinddatabase.herokuapp.com/',
     image: cgd
