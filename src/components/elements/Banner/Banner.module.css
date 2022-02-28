@@ -2,6 +2,7 @@
   height: 100vh;
   background-image: url('../../../../public/backgroundLight.jpg');
   background-size: cover;
+  background-position: center 0;
   overflow: hidden;
   z-index: -999;
 }
