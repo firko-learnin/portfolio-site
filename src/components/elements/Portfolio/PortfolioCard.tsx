@@ -99,8 +99,16 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
           as="h4"
           lineHeight="tight"
           isTruncated
+          className={styles.title}
         >
           {project.title}
+          <SocialIcon
+            style={{ height: 40, width: 40 }}
+            className={styles.link}
+            url={project.githubUrl}
+            target="_blank"
+            fgColor={theme.colors.brand.white}
+          ></SocialIcon>
         </Box>
         <p className={styles.projectDescription}>{project.description}</p>
         <Box
@@ -114,13 +122,6 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
             description={project.description}
             title={project.title}
           ></ModalText>
-          <SocialIcon
-            style={{ height: 40, width: 40 }}
-            className={styles.link}
-            url={project.githubUrl}
-            target="_blank"
-            fgColor={theme.colors.brand.white}
-          ></SocialIcon>
         </Box>
       </Box>
     </Box>

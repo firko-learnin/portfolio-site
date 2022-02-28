@@ -88,3 +88,8 @@ html.rps-scroll--disabled
 .carousel {
   height: 100% !important;
 }
+
+.control-dots {
+  top: 0;
+  left: 40%;
+}
