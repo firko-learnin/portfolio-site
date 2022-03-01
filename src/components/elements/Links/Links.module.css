@@ -10,12 +10,28 @@
 .socialsContainer a {
   align-self: center;
   padding: 4vw;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialsContainer svg {
   transition: all 0.2s ease-in-out;
 }
 
 .socialsContainer a:hover {
+  transform: scale(1.1);
+}
+
+.flickr {
+  align-self: center;
+  padding: 4vw;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.flickr:hover {
   transform: scale(1.1);
 }
 
@@ -51,4 +67,9 @@
     margin: auto;
     margin-top: 10vh;
   }
+}
+
+.flickr {
+  height: 50px;
+  width: 50px;
 }
