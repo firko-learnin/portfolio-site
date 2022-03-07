@@ -9,7 +9,8 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton
+  ModalCloseButton,
+  Text
 } from '@chakra-ui/react';
 import { SocialIcon } from 'react-social-icons';
 import styles from './Portfolio.module.css';
@@ -39,7 +40,7 @@ function ModalText({ description, title }: Description) {
     <>
       {description.length > 175 ? (
         <Button className={styles.modalButton} onClick={onOpen}>
-          Read more...
+          Read more
         </Button>
       ) : null}
 
@@ -110,7 +111,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
             fgColor={theme.colors.brand.white}
           ></SocialIcon>
         </Box>
-        <p className={styles.projectDescription}>{project.description}</p>
+        <Text className={styles.projectDescription}>{project.description}</Text>
         <Box
           display="flex"
           mt="2"

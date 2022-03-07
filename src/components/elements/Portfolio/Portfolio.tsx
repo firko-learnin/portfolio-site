@@ -24,7 +24,7 @@ const projects = [
   },
   {
     imageAlt: 'A screenshot of the dev help channel alternative',
-    title: 'SoC Week 9 Project',
+    title: 'SoC - Week 9 Project',
     description:
       'During daily workshops at the School of Code bootcampers would post their issues in a Slack channel for assistance. The channel would often fill up in tricky workshops and posts would get lost. For our midway School of Project my team decided to make a dashboard as a solution to help fellow bootcampers. The dashboard allows bootcampers to see problems others are facing in real-time and see which rooms coaches are helping in order to join rooms with the same issues. The dashboard was created using Express, Postgres, React and the MUI library.',
     githubUrl:
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     imageAlt: 'A screenshot of my recipe app',
-    title: 'SoC Week 3 Hackathon - Recipe App',
+    title: 'SoC - Week 3 Hackathon - Recipe App',
     description:
       'A recipe app made pair programming during a School of Code Hackathon Friday after 3 at School of Code.  HTML, CSS and vanilla JS were used to create this app. ',
     githubUrl: 'https://github.com/firko-learnin/CGD',

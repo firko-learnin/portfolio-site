@@ -24,10 +24,11 @@
 }
 
 .projectDescription {
-  overflow-y: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-left: 1rem;
   margin-right: 1rem;
-  height: auto;
+  height: 10vh;
 }
 
 .projectCard {
@@ -83,8 +84,11 @@
     height: 70vh;
   }
   .projectDescription {
-    overflow-y: hidden;
-    height: 20vh;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    height: 18vh;
   }
   .modalButton {
     display: block !important;

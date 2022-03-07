@@ -9,15 +9,18 @@ export default function About() {
     <section id="about">
       <div className={styles.about}>
         <div className={styles.textArea}>
-          <h1 className={styles.h1}>About:</h1>
+          <h3 className={styles.h3}>About:</h3>
           <p className={styles.text}>
             I am a full stack developer based in Birmingham UK with a passion
             for tech and problem solving. {'\n'}
             {'\n'}
             After several years working in the financial services industry I
             decided to take my interest in tech to the next level and pursue a
-            full-time career in software development by joining{'\n'}The School
-            of Code&#39;s 16 week intensive full stack bootcamp.
+            full-time career in software development by joining the School of
+            Code&#39;s 16 week intensive full stack bootcamp.{'\n'}
+            {'\n'}I thoroughly enjoyed my experience at the School of Code which
+            not only teaches people to code but also teaches the important soft
+            skills required to become a collaborative and creative developer.
           </p>
         </div>
         <div className={styles.imageContainer}>
@@ -27,10 +30,21 @@ export default function About() {
             layout="responsive"
           ></Image>
         </div>
-        {/* <div className={styles.experience}>
-          {' '}
-          <h2 className={styles.h2}>Experience:</h2>
-        </div> */}
+        <div className={styles.experience}>
+          <h4 className={styles.h4}>Tech stack:</h4>
+          <ul
+            className={(styles.text, styles.ul)}
+            style={{ listStylePosition: 'inside' }}
+          >
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>NextJS</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
       </div>
       <div className="arrowWrapper">
         <KeyboardDoubleArrowDownIcon id="downArrow" />

@@ -31,14 +31,14 @@
   overflow: hidden;
 }
 
-.h1 {
+.h3 {
   color: var(--yellow);
   margin-left: 5vw;
   font-size: 5vw;
   padding-top: 5vh;
 }
 
-.h2 {
+.h4 {
   color: var(--yellow);
   margin-left: 5vw;
   font-size: 5vw;
@@ -47,11 +47,18 @@
 .text {
   margin-top: 1rem;
   margin-left: 5vw;
-  margin-right: 5vw;
+  margin-right: 0;
   font-size: 16px;
   white-space: pre-wrap;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.ul {
+  margin-left: 5vw;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 @media (max-width: 912px) {
