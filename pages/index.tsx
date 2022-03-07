@@ -8,11 +8,14 @@ import Banner from '../src/components/elements/Banner/Banner';
 import About from '../src/components/elements/About/About';
 import Links from '../src/components/elements/Links/Links';
 import Portfolio from '../src/components/elements/Portfolio/Portfolio';
+import Head from 'next/head';
 const Home: NextPage = () => {
   const [colourMode, setColourMode] = useState(theme.config.initialColorMode);
   const [blockScroll, setBlockScroll] = useState(false);
   return (
     <main id="main">
+      <title>Jack Firkin - Portfolio Site</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <DarkmodeToggle></DarkmodeToggle>
       <ReactPageScroller
         blockScrollUp={blockScroll}
