@@ -6,6 +6,7 @@ import CardCarousel from './CardCarousel';
 import cgd from '../../../../public/coffeeGrindDatabase.png';
 import recipeApp from '../../../../public/recipeApp.png';
 import portfolioSite from '../../../../public/portfolioSite.png';
+import lifestyleLifter from '../../../../public/lifestyleLifter.jpg';
 import devhub from '../../../../public/devhub.png';
 
 type Props = {
@@ -21,6 +22,16 @@ const projects = [
     githubUrl: 'https://github.com/firko-learnin/CGD',
     deployUrl: 'https://coffeegrinddatabase.herokuapp.com/',
     image: cgd
+  },
+  {
+    imageAlt: 'A screenshot of the Life Lifter app',
+    title: 'SoC - Final Project',
+    description:
+      'An all-in-one lifestyle app created in an agile team of 6 for the School of Code final project, with a focus on minimalism and accessibility. The app was created over 4 weeks using week long sprints. Technology used: React, NextJS, Express, Firebase authentication, Postgres, Jest, SuperTest, Cypress, MUI, Figma, Postman, Lucidchart, Heroku and Netlify.',
+    githubUrl:
+      'https://github.com/SchoolOfCode/final-project-front-end-theredhotchillicoders/tree/productionbranch',
+    deployUrl: 'https://lifelifter.netlify.app/',
+    image: lifestyleLifter
   },
   {
     imageAlt: 'A screenshot of the dev help channel alternative',
