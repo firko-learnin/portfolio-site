@@ -89,4 +89,17 @@
   .h2 {
     font-size: 32px;
   }
+  .h3 {
+    padding-top: 2vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .text {
+    text-align: center;
+    font-size: 15px;
+  }
+  .ul {
+    font-size: 15px;
+  }
 }

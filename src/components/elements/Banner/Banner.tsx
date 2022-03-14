@@ -23,7 +23,7 @@ export default function Banner() {
         <h2 className={styles.h2}>Full Stack Engineer</h2>
         <div
           className="arrowWrapper"
-          style={{ position: 'absolute', bottom: '3rem' }}
+          style={{ position: 'absolute', bottom: '2rem' }}
         >
           <KeyboardDoubleArrowDownIcon
             id="downArrow"

@@ -16,6 +16,14 @@ const Home: NextPage = () => {
     <main id="main">
       <title>Jack Firkin - Portfolio Site</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="description"
+        content="Personal portfolio site for Jack Firkin, a full stack developer living in Birmingham, UK."
+      ></meta>
+      <meta
+        name="keyword"
+        content="portfolio, javascript, developer, jack, firkin, react"
+      ></meta>
       <DarkmodeToggle></DarkmodeToggle>
       <ReactPageScroller
         blockScrollUp={blockScroll}
