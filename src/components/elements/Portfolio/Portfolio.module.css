@@ -48,6 +48,10 @@
   transform: scale(1.1);
 }
 
+.projectUrl:hover {
+  transform: scale(1.05);
+}
+
 .h1 {
   grid-area: 'About';
   color: var(--yellow);

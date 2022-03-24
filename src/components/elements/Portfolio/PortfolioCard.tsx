@@ -84,14 +84,12 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       onPointerEnter={() => handleBlockScroll(true)}
       onPointerLeave={() => handleBlockScroll(false)}
     >
-      <a target="_blank" href={project.deployUrl} rel="noreferrer">
-        <Image
-          src={project.image}
-          alt={project.imageAlt}
-          height="400px"
-          width="600px"
-        />
-      </a>
+      <Image
+        src={project.image}
+        alt={project.imageAlt}
+        height="400px"
+        width="600px"
+      />
       <Box className={styles.projectText}>
         <Box
           p="3"
@@ -102,7 +100,14 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
           isTruncated
           className={styles.title}
         >
-          {project.title}
+          <a
+            className={styles.projectUrl}
+            target="_blank"
+            href={project.deployUrl}
+            rel="noreferrer"
+          >
+            {project.title}
+          </a>
           <SocialIcon
             style={{ height: 40, width: 40 }}
             className={styles.link}
