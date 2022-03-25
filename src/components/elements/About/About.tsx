@@ -18,9 +18,10 @@ export default function About() {
             decided to take my interest in tech to the next level and pursue a
             full-time career in software development by joining the School of
             Code&#39;s 16 week intensive full stack bootcamp.{'\n'}
-            {'\n'}I thoroughly enjoyed my experience at the School of Code which
-            not only teaches people to code but also teaches the important soft
-            skills required to become a collaborative and creative developer.
+            {'\n'}I thoroughly enjoyed my experience at the School of Code,
+            which not only teaches people to code but also teaches the important
+            soft skills required to become a collaborative and creative
+            developer.
           </p>
         </div>
         <div className={styles.imageContainer}>
