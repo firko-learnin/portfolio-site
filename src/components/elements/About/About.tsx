@@ -44,6 +44,11 @@ export default function About() {
             <li>Node.js</li>
             <li>Express.js</li>
             <li>PostgreSQL</li>
+            <li>React Native</li>
+            <li>Jest</li>
+            <li>Mocha</li>
+            <li>Cypress</li>
+            <li>Firebase</li>
           </ul>
         </div>
       </div>

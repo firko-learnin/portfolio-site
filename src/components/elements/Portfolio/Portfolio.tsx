@@ -8,12 +8,22 @@ import recipeApp from '../../../../public/recipeApp.png';
 import portfolioSite from '../../../../public/portfolioSite.png';
 import lifestyleLifter from '../../../../public/lifestyleLifter.jpg';
 import devhub from '../../../../public/devhub.png';
+import glastonburyCompanion from '../../../../public/glastoCompanion.jpg';
 
 type Props = {
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
 };
 
 const projects = [
+  {
+    imageAlt: 'A screenshot of my Glastonbury Festival app',
+    title: 'Glastonbury Companion',
+    description:
+      'A WIP React Native app for the Glastonbury Festival. I am building the app for Android and iOS using Expo. It currently includes Firebase authentication, a secret set Twitter newsfeed and a schedule displaying the acts playing each day. I will be using MongoDB to allow users to create personalised schedules and share them with others.',
+    githubUrl: 'https://github.com/firko-learnin/glastonbury-companion',
+    deployUrl: 'https://github.com/firko-learnin/glastonbury-companion',
+    image: glastonburyCompanion
+  },
   {
     imageAlt: 'A screenshot of my coffee grind database app',
     title: 'Coffee Grind Database',
