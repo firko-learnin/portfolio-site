@@ -2,7 +2,6 @@ import { Box, useDisclosure, Button } from '@chakra-ui/react';
 import Image from 'next/image';
 import {
   useTheme,
-  useColorMode,
   Modal,
   ModalOverlay,
   ModalContent,

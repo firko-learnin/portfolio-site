@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './Links.module.css';
 import { SocialIcon } from 'react-social-icons';
-import { useColorMode, IconButton } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/react';
 import { useTheme } from '@chakra-ui/react';
-import { ThemeContext } from '@emotion/react';
-import FlickrIcon from './Links copy';
+import FlickrIcon from './FlickrIcon';
 
 export default function Links() {
   const theme = useTheme();

@@ -1,5 +1,4 @@
 import React from 'react';
-import flickr from '../../../../public/flickr-svgrepo-com.svg';
 
 export default function FlickrIcon() {
   return (

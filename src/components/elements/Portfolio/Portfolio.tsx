@@ -1,7 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import styles from './Portfolio.module.css';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import PortfolioCard from './PortfolioCard';
 import CardCarousel from './CardCarousel';
 import cgd from '../../../../public/coffeeGrindDatabase.png';
 import recipeApp from '../../../../public/recipeApp.png';
