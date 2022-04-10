@@ -83,12 +83,14 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       onPointerEnter={() => handleBlockScroll(true)}
       onPointerLeave={() => handleBlockScroll(false)}
     >
-      <Image
-        src={project.image}
-        alt={project.imageAlt}
-        height="400px"
-        width="600px"
-      />
+      <Box className={styles.imageContainer}>
+        <Image
+          src={project.image}
+          alt={project.imageAlt}
+          height="400px"
+          width="600px"
+        />
+      </Box>
       <Box className={styles.projectText}>
         <Box
           p="3"

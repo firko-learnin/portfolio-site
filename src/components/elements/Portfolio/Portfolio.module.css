@@ -12,27 +12,31 @@
 }
 
 .projectText {
+  display: flex;
+  flex-direction: column;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
   text-align: justify;
-  height: fit-content;
+  height: 40%;
 }
 
 .title {
+  height: 4rem;
   display: flex;
   align-items: center;
 }
 
 .projectDescription {
-  overflow: hidden;
   text-overflow: ellipsis;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 10vh;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  flex: 0.9;
 }
 
 .projectCard {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   height: 60vh;
@@ -74,7 +78,11 @@
   display: none !important;
 }
 
-@media (max-width: 850px) {
+.imageContainer {
+  height: 60%;
+}
+
+@media (max-width: 900px) {
   .text {
     text-align: center;
   }
@@ -85,20 +93,26 @@
     font-size: 32px;
   }
   .projectCard {
-    height: 70vh;
+    /* height: 70vh; */
+    margin: 1vh;
   }
   .projectDescription {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
-    height: 18vh;
+    padding-bottom: 2rem;
   }
   .modalButton {
+    flex: 1;
     display: block !important;
     margin-right: 1rem;
   }
+  .imageContainer {
+    height: 50%;
+  }
   .projectText {
+    height: 50%;
     text-align: center;
   }
 }

@@ -90,6 +90,5 @@ html.rps-scroll--disabled
 }
 
 .control-dots {
-  top: 0;
-  left: 40%;
+  display: none;
 }
