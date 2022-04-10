@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           handlePageChange={handlePageChange}
           setBlockScroll={setBlockScroll}
         ></Portfolio>
-        <Links handlePageChange={handlePageChange}></Links>
+        <Links></Links>
       </ReactPageScroller>
     </main>
   );
