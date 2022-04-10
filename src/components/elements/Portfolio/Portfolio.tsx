@@ -11,6 +11,7 @@ import glastonburyCompanion from '../../../../public/glastoCompanion.jpg';
 
 type Props = {
   setBlockScroll: Dispatch<SetStateAction<boolean>>;
+  handlePageChange: (number: number) => void;
 };
 
 const projects = [
@@ -72,7 +73,7 @@ const projects = [
   }
 ];
 
-export default function Portfolio({ setBlockScroll }: Props) {
+export default function Portfolio({ setBlockScroll, handlePageChange }: Props) {
   return (
     <>
       <section id="portfolio" className={styles.portfolio}>
@@ -85,7 +86,9 @@ export default function Portfolio({ setBlockScroll }: Props) {
         </div>
       </section>
       <div className="arrowWrapper">
-        <KeyboardDoubleArrowDownIcon id="downArrow" />
+        <button id="downArrow" onClick={() => handlePageChange(3)}>
+          <KeyboardDoubleArrowDownIcon id="downArrow" />
+        </button>
       </div>
     </>
   );

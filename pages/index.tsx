@@ -1,17 +1,23 @@
 import type { NextPage } from 'next';
 import ReactPageScroller from 'react-page-scroller';
 import { theme } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import DarkmodeToggle from '../src/components/DarkmodeToggle/DarkmodeToggle';
 //Sections
 import Banner from '../src/components/elements/Banner/Banner';
 import About from '../src/components/elements/About/About';
 import Links from '../src/components/elements/Links/Links';
 import Portfolio from '../src/components/elements/Portfolio/Portfolio';
-import Head from 'next/head';
+
 const Home: NextPage = () => {
   const [colourMode, setColourMode] = useState(theme.config.initialColorMode);
   const [blockScroll, setBlockScroll] = useState(false);
+  const [pageNumber, setPageNumber] = useState(0);
+
+  function handlePageChange(number: number) {
+    setPageNumber(Math.min(number, 3));
+  }
+
   return (
     <main id="main">
       <title>Jack Firkin - Portfolio Site</title>
@@ -28,11 +34,16 @@ const Home: NextPage = () => {
       <ReactPageScroller
         blockScrollUp={blockScroll}
         blockScrollDown={blockScroll}
+        pageOnChange={handlePageChange}
+        customPageNumber={pageNumber}
       >
-        <Banner></Banner>
-        <About></About>
-        <Portfolio setBlockScroll={setBlockScroll}></Portfolio>
-        <Links></Links>
+        <Banner handlePageChange={handlePageChange}></Banner>
+        <About handlePageChange={handlePageChange}></About>
+        <Portfolio
+          handlePageChange={handlePageChange}
+          setBlockScroll={setBlockScroll}
+        ></Portfolio>
+        <Links handlePageChange={handlePageChange}></Links>
       </ReactPageScroller>
     </main>
   );

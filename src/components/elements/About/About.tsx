@@ -4,7 +4,11 @@ import Image from 'next/image';
 import headshot from '../../../images/headshot.jpg';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
-export default function About() {
+type Props = {
+  handlePageChange: (number: number) => void;
+};
+
+export default function About({ handlePageChange }: Props) {
   return (
     <section id="about">
       <div className={styles.about}>
@@ -53,7 +57,9 @@ export default function About() {
         </div>
       </div>
       <div className="arrowWrapper">
-        <KeyboardDoubleArrowDownIcon id="downArrow" />
+        <button id="downArrow" onClick={() => handlePageChange(2)}>
+          <KeyboardDoubleArrowDownIcon id="downArrow" />
+        </button>
       </div>
     </section>
   );

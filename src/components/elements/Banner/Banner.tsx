@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import styles from './Banner.module.css';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { useColorMode, IconButton } from '@chakra-ui/react';
 
-export default function Banner() {
+type Props = {
+  handlePageChange: (number: number) => void;
+};
+
+export default function Banner({ handlePageChange }: Props) {
   const { colorMode } = useColorMode();
 
   return (
@@ -23,10 +27,12 @@ export default function Banner() {
           className="arrowWrapper"
           style={{ position: 'absolute', bottom: '2rem' }}
         >
-          <KeyboardDoubleArrowDownIcon
-            id="downArrow"
-            style={{ color: 'white' }}
-          />
+          <button onClick={() => handlePageChange(1)}>
+            <KeyboardDoubleArrowDownIcon
+              id="downArrow"
+              style={{ color: 'white' }}
+            />
+          </button>
         </div>
       </div>
     </>
