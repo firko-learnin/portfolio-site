@@ -92,3 +92,39 @@ html.rps-scroll--disabled
 .control-dots {
   display: none;
 }
+
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-light
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  button.control-arrow.control-prev {
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+  height: 97%;
+}
+
+html.rps-scroll--disabled
+  body.rps-scroll--disabled.chakra-ui-light
+  div#__next
+  main#main
+  div
+  div
+  div
+  section#portfolio.Portfolio_portfolio__4nEtS
+  div.Portfolio_projectsSection__rx_ZE
+  div.carousel-root
+  div.carousel.carousel-slider
+  button.control-arrow.control-next {
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+  height: 97%;
+}

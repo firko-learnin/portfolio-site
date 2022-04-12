@@ -80,6 +80,9 @@
 
 .imageContainer {
   height: 60%;
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 @media (max-width: 900px) {

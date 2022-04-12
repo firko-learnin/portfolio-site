@@ -87,8 +87,10 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
         <Image
           src={project.image}
           alt={project.imageAlt}
-          height="400px"
-          width="600px"
+          // height="400px"
+          // width="600px"
+          layout="fill"
+          objectFit="fill"
         />
       </Box>
       <Box className={styles.projectText}>
