@@ -80,9 +80,10 @@
 
 .imageContainer {
   height: 60%;
+  width: 50%;
   position: relative;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 900px) {
@@ -113,6 +114,7 @@
   }
   .imageContainer {
     height: 50%;
+    width: 80%;
   }
   .projectText {
     height: 50%;
