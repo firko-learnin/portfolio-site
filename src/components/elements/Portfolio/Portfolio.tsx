@@ -19,7 +19,7 @@ const projects = [
     imageAlt: 'A screenshot of my Glastonbury Festival app',
     title: 'Glastonbury Companion',
     description:
-      'A WIP React Native app for the Glastonbury Festival. I am building the app for Android and iOS using Expo. It currently includes Firebase authentication, a secret set Twitter newsfeed and a schedule displaying the acts playing each day. I will be using MongoDB to allow users to create personalised schedules and share them with others.',
+      'A WIP React Native app for the Glastonbury Festival. I am building the app for Android and iOS using Expo. It currently includes Firebase authentication, a secret set Twitter newsfeed and a schedule displaying the acts playing each day. I am currently in the process of creating a Go API using MongoDB to allow users to create personalised schedules and share them with others.',
     githubUrl: 'https://github.com/firko-learnin/glastonbury-companion',
     deployUrl: 'https://github.com/firko-learnin/glastonbury-companion',
     image: glastonburyCompanion
@@ -57,7 +57,7 @@ const projects = [
     imageAlt: 'A screenshot of my recipe app',
     title: 'SoC - Week 3 Hackathon - Recipe App',
     description:
-      'A recipe app made pair programming during a School of Code Hackathon Friday after 3 at School of Code.  HTML, CSS and vanilla JS were used to create this app. ',
+      'A recipe app made pair programming during a School of Code Hackathon Friday after 3 weeks at School of Code.  HTML, CSS and vanilla JS were used to create this app. ',
     githubUrl: 'https://github.com/firko-learnin/CGD',
     deployUrl: 'https://coffeegrinddatabase.herokuapp.com/',
     image: recipeApp

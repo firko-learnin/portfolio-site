@@ -80,7 +80,18 @@
 
 .imageContainer {
   height: 60%;
-  width: 50%;
+  width: 40%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
+}
+
+.modalImageContainer {
+  flex: 1;
   position: relative;
   margin-left: auto;
   margin-right: auto;

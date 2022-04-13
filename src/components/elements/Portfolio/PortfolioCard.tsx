@@ -9,7 +9,8 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Text
+  Text,
+  Image as ChakraImage
 } from '@chakra-ui/react';
 import { SocialIcon } from 'react-social-icons';
 import styles from './Portfolio.module.css';
@@ -24,7 +25,7 @@ type Props = {
     deployUrl: string;
     image: StaticImageData;
   };
-  setBlockScroll: Dispatch<SetStateAction<boolean>>;
+  setBlockScroll?: Dispatch<SetStateAction<boolean>>;
 };
 
 type Description = {
@@ -50,7 +51,62 @@ function ModalText({ description, title }: Description) {
           <ModalCloseButton />
           <ModalBody textAlign="center">{description}</ModalBody>
 
-          <ModalFooter>
+          <ModalFooter style={{ display: 'flex', justifyContent: 'center' }}>
+            <Button
+              bgColor={theme.colors.brand.yellow}
+              color={theme.colors.brand.onyx}
+              mr={3}
+              onClick={onClose}
+            >
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+}
+
+function ModalImage({ project }: Props) {
+  const theme = useTheme();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <>
+      <Box className={styles.imageContainer} onClick={onOpen}>
+        <Image
+          src={project.image}
+          alt={project.imageAlt}
+          // height="400px"
+          // width="600px"
+          layout="fill"
+          objectFit="fill"
+        />
+      </Box>
+
+      <Modal
+        size="4xl"
+        isOpen={isOpen}
+        onClose={onClose}
+        isCentered
+        colorScheme="brand"
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{project.title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody style={{ display: 'flex' }}>
+            <Box className={styles.modalImageContainer} onClick={onOpen}>
+              <Image
+                src={project.image}
+                alt={project.imageAlt}
+                height="500px"
+                width="750px"
+                layout="responsive"
+              />
+            </Box>
+          </ModalBody>
+
+          <ModalFooter style={{ display: 'flex', justifyContent: 'center' }}>
             <Button
               bgColor={theme.colors.brand.yellow}
               color={theme.colors.brand.onyx}
@@ -71,7 +127,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
 
   function handleBlockScroll(boolean: boolean) {
     console.log('blocking');
-    setBlockScroll(boolean);
+    setBlockScroll!(boolean);
   }
 
   return (
@@ -83,7 +139,7 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
       onPointerEnter={() => handleBlockScroll(true)}
       onPointerLeave={() => handleBlockScroll(false)}
     >
-      <Box className={styles.imageContainer}>
+      {/* <Box className={styles.imageContainer}>
         <Image
           src={project.image}
           alt={project.imageAlt}
@@ -92,7 +148,8 @@ export default function PortfolioCard({ project, setBlockScroll }: Props) {
           layout="fill"
           objectFit="fill"
         />
-      </Box>
+      </Box> */}
+      <ModalImage project={project}></ModalImage>
       <Box className={styles.projectText}>
         <Box
           p="3"
